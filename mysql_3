@@ -1,0 +1,21 @@
+
+
+
+1.	select查询 distinct使用
+select * from *****;     select distinct name,math from student;
+
+2.	asc（升序），desc（降序）排列 默认升序
+select * from exam_result order by math desc , chinese asc;
+
+3.	 条件查询where  in 和模糊查询 like (%多个， _单个)
+Select * from exam_result where  chinese >80 ;
+Select * from exam_result where  math in(98,34,45,99);
+Select  name from exam_result where name like ‘孙%’;
+Selcet name from exam_result where name like ‘孙_’;
+4.	针对null
+Select name from exam_result where chinese <=> Null;
+Select name from exam_result where chinese  is null;
+5.	分页查询  limit（限制查询）offset（跳过查询）,如查询第三条和第五条数据
+Select * from exam_resault limit 3 offset 2;
+
+
