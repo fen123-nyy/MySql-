@@ -1,0 +1,15 @@
+
+
+1.创建数据库  create database *****;  show ****;   use ****; drop database *****;
+2.创建表  查看表结构 create table ****; desc ****;  show tables;   drop table ***;
+3.指定插入  datatime使用  insert into student values (1,’张三’);   
+          Create table student (id int , name varcahr(20), birthday datatime);
+这样就可以使用新函数now()直接新时间使用
+       Insert into student values (2,’李四’,now());
+4.修改权限utf8mb4 从表到数据库
+   Alter table student convert to character set utf8mb4 collate utf8mb4_unicode_ci;
+   Alter database test character set utf8mb4 collate utf8mb4_unicode_ci;
+5.指定列查询和别名
+  Select name,chinese+math from exam_result;
+  Select name as na from exam_result;
+
